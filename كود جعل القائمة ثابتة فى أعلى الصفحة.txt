@@ -1,0 +1,26 @@
+пцЯ Ькс ЧсоЧЦуЩ ЫЧШЪЩ нь Уксь ЧсенЭЩ
+жк ЧспцЯ оШс цгу </body>
+ЧгЪШЯс ##### Шукбн ЧсоЧЦуЩ
+
+<script type='text/javascript'>
+//<![CDATA[
+$(document).ready(function() {
+    // Menentukan elemen yang dijadikan sticky yaitu .nav
+    var stickyNavTop = $('#####').offset().top;
+    var stickyNav = function(){
+        var scrollTop = $(window).scrollTop();
+        // Kondisi jika discroll maka menu akan selalu diatas, dan sebaliknya      
+        if (scrollTop > stickyNavTop) {
+          $('#####').css({ 'position': 'fixed', 'top':0, 'z-index':9999 });
+        } else {
+            $('#####').css({ 'position': 'relative', 'width': '100%' });
+        }
+    };
+    // Jalankan fungsi
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+//]]>
+</script>
